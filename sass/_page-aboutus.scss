@@ -1,3 +1,11 @@
+.grid-about-us {
+	display: grid;
+	grid-template-rows: auto minmax(0, 40vh);
+	grid-template-columns: minmax(16rem, 85vh);
+	margin: 5%;
+	gap: 20vh;
+}
+
 .about-us {
 	width: 100%;
 	height: 85vh;
@@ -8,58 +16,30 @@
 
 	overflow-x: hidden;
 	&__heading {
-		position: absolute;
 		font-size: 3rem;
 		font-weight: 700;
 		color: white;
 		padding: 10px;
 		min-width: 30rem;
-		// background-color: rgba($color: $, $alpha: 0.8);
-
-		top: 20%;
-		left: 45%;
-		transform: translate(-50%, -50%);
-
-		// @include respond(1000) {
-		// 	left: 45%;
-		// }
-
-		@include respond(768) {
-			left: 70%;
-		}
-
-		// @include respond(500) {
-		// 	color: black;
-		// }
 	}
 
 	&__content {
-		// display: flex;
-		position: absolute;
-		margin-top: 1rem;
-		top: 65%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		background-color: $primary-dark;
-		min-width: 20rem;
-		// max-height: 30rem;
-		// height: 20rem;
-
+		padding: 2%;
+		display: flex;
+		align-items: center;
 		&-text {
+			background-image: linear-gradient(rgba($primary-dark, 0.8), rgba($primary-dark, 0.8));
+
 			// height: %;
 			// width: 100%;
-			// display: flex;
+			display: flex;
 			font-size: 1.2rem;
-			// justify-content: center;
+			justify-content: center;
 			line-height: 1.7rem;
 			// align-items: center;
 			padding: 1rem;
 
 			color: white;
-
-			@include respond(768) {
-				font-size: 1rem;
-			}
 		}
 	}
 }

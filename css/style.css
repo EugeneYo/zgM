@@ -46,6 +46,7 @@ html {
 
 .mybody {
   overflow-x: hidden;
+  overflow-y: hidden;
   position: relative;
 }
 
@@ -176,6 +177,14 @@ nav {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
+.grid-about-us {
+  display: grid;
+  grid-template-rows: auto minmax(0, 40vh);
+  grid-template-columns: minmax(16rem, 85vh);
+  margin: 5%;
+  gap: 20vh;
+}
+
 .about-us {
   width: 100%;
   height: 85vh;
@@ -186,40 +195,25 @@ nav {
   overflow-x: hidden;
 }
 .about-us__heading {
-  position: absolute;
   font-size: 3rem;
   font-weight: 700;
   color: white;
   padding: 10px;
   min-width: 30rem;
-  top: 20%;
-  left: 45%;
-  transform: translate(-50%, -50%);
-}
-@media only screen and (max-width: 48em) {
-  .about-us__heading {
-    left: 70%;
-  }
 }
 .about-us__content {
-  position: absolute;
-  margin-top: 1rem;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #00334b;
-  min-width: 20rem;
+  padding: 2%;
+  display: flex;
+  align-items: center;
 }
 .about-us__content-text {
+  background-image: linear-gradient(rgba(0, 51, 75, 0.8), rgba(0, 51, 75, 0.8));
+  display: flex;
   font-size: 1.2rem;
+  justify-content: center;
   line-height: 1.7rem;
   padding: 1rem;
   color: white;
-}
-@media only screen and (max-width: 48em) {
-  .about-us__content-text {
-    font-size: 1rem;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
