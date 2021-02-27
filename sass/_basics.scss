@@ -7,13 +7,11 @@
 }
 
 html {
-	font-size: 130%;
+	font-size: 100%;
 	font-family: "Poppins", sans-serif;
 }
 
-body,
-html {
-	@include respond(768) {
-		overflow-x: hidden;
-	}
+.mybody {
+	overflow-x: hidden;
+	position: relative;
 }

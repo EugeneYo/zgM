@@ -40,15 +40,13 @@
 }
 
 html {
-  font-size: 130%;
+  font-size: 100%;
   font-family: "Poppins", sans-serif;
 }
 
-@media only screen and (max-width: 48em) {
-  body,
-html {
-    overflow-x: hidden;
-  }
+.mybody {
+  overflow-x: hidden;
+  position: relative;
 }
 
 nav {
@@ -84,6 +82,11 @@ nav {
 }
 .nav-links li {
   padding: 15px;
+}
+@media only screen and (max-width: 48em) {
+  .nav-links li {
+    padding: 0;
+  }
 }
 .nav-links li a {
   text-decoration: none;
@@ -188,18 +191,14 @@ nav {
   font-weight: 700;
   color: white;
   padding: 10px;
+  min-width: 30rem;
   top: 20%;
-  left: 65%;
+  left: 40%;
   transform: translate(-50%, -50%);
-}
-@media only screen and (max-width: 62.5em) {
-  .about-us__heading {
-    left: 45%;
-  }
 }
 @media only screen and (max-width: 48em) {
   .about-us__heading {
-    left: 50%;
+    left: 60%;
   }
 }
 .about-us__content {
@@ -209,14 +208,13 @@ nav {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #00334b;
+  min-width: 30rem;
 }
 .about-us__content-text {
   height: 100%;
   width: 100%;
-  display: flex;
   font-size: 1.2rem;
   line-height: 1.7rem;
-  align-items: center;
   padding: 1rem;
   color: white;
 }
