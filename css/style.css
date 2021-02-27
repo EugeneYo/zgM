@@ -1,0 +1,229 @@
+/*
+
+1. Variables
+2. mixins
+3. animations
+*/
+/*----------------------------------------------------------------------------------
+1. Variables
+-----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------
+2. mixins
+-----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------
+2. mixins
+-----------------------------------------------------------------------------------*/
+@keyframes navLinkFade {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes increaseVisibility {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 130%;
+  font-family: "Poppins", sans-serif;
+}
+
+@media only screen and (max-width: 48em) {
+  body,
+html {
+    overflow-x: hidden;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: white;
+  box-shadow: 0 2px 5px 1px #c7c5c5;
+}
+@media only screen and (max-width: 48em) {
+  nav {
+    border-bottom: 2px solid #c7c5c5;
+  }
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img {
+  background-size: cover;
+  background-position: 90%;
+  width: 80%;
+}
+
+.nav-links {
+  display: inline-flex;
+  justify-content: space-evenly;
+  list-style: none;
+  font-weight: 700;
+}
+.nav-links li {
+  padding: 15px;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #888a8c;
+  transition: all 0.3s ease-out 0.2s;
+  position: relative;
+}
+.nav-links li a::after {
+  content: ".";
+  position: absolute;
+  height: 3px;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  width: 0%;
+  color: transparent;
+  transition: all 0.5s;
+}
+.nav-links li:hover a {
+  color: #29aae1;
+}
+.nav-links li:hover a::after {
+  width: 100%;
+  background-color: #29aae1;
+}
+.nav-links li.active a {
+  color: #29aae1;
+}
+@media only screen and (max-width: 48em) {
+  .nav-links li {
+    margin-bottom: 5vh;
+    opacity: 0;
+  }
+}
+@media only screen and (max-width: 48em) {
+  .nav-links {
+    position: absolute;
+    right: 0;
+    height: 92vh;
+    top: 8vh;
+    padding-top: 10vh;
+    background-color: white;
+    color: #00334b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.8s ease-in;
+    border-left: 2px solid #c7c5c5;
+    z-index: 10;
+  }
+}
+
+.burger {
+  display: none;
+}
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #66b4d1;
+  margin: 5px;
+  border-radius: 5px;
+  transition: all 0.4s ease;
+}
+@media only screen and (max-width: 48em) {
+  .burger {
+    display: block;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.about-us {
+  width: 100%;
+  height: 85vh;
+  position: relative;
+  background-image: linear-gradient(rgba(102, 180, 209, 0.2), rgba(102, 180, 209, 0.2)), url(../img/engineering.jpg);
+  background-position: top;
+  background-size: cover;
+  overflow-x: hidden;
+}
+.about-us__heading {
+  position: absolute;
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  padding: 10px;
+  top: 20%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+}
+@media only screen and (max-width: 62.5em) {
+  .about-us__heading {
+    left: 45%;
+  }
+}
+@media only screen and (max-width: 48em) {
+  .about-us__heading {
+    left: 50%;
+  }
+}
+.about-us__content {
+  position: absolute;
+  margin-top: 1rem;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #00334b;
+}
+.about-us__content-text {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  align-items: center;
+  padding: 1rem;
+  color: white;
+}
+@media only screen and (max-width: 48em) {
+  .about-us__content-text {
+    font-size: 1rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

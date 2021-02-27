@@ -1,0 +1,74 @@
+/*
+
+1. Variables
+2. mixins
+3. animations
+*/
+
+/*----------------------------------------------------------------------------------
+1. Variables
+-----------------------------------------------------------------------------------*/
+$primary-light: #66b4d1;
+$primary-dark: #00334b;
+$primary-light-2: #29aae1;
+
+$text-grey-blue: #678fa8;
+$text-grey: #888a8c;
+/*----------------------------------------------------------------------------------
+2. mixins
+-----------------------------------------------------------------------------------*/
+@mixin clearfix {
+	&::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+@mixin respond($breakpoint) {
+	@if $breakpoint == 768 {
+		@media only screen and (max-width: 48em) {
+			@content;
+		} //600px 600px (600px/16px) = 37.5em
+	}
+	@if $breakpoint == 1000 {
+		@media only screen and (max-width: 62.5em) {
+			@content;
+		} //900px
+	}
+	@if $breakpoint == tab-land {
+		@media only screen and (max-width: 75em) {
+			@content;
+		} //1200px
+	}
+	@if $breakpoint == big-desktop {
+		@media only screen and (min-width: 112.5em) {
+			@content;
+		} //1800
+	}
+}
+
+/*----------------------------------------------------------------------------------
+2. mixins
+-----------------------------------------------------------------------------------*/
+@keyframes navLinkFade {
+	0% {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes increaseVisibility {
+	0% {
+		opacity: 0;
+		// transform: translateX(50px);
+	}
+	100% {
+		opacity: 1;
+		// transform: translateX(0);
+	}
+}
