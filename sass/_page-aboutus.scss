@@ -1,32 +1,44 @@
 .grid-about-us {
 	display: grid;
-	grid-template-rows: auto minmax(0, 40vh);
+	grid-template-rows: 20vh minmax(0, 35vh);
 	grid-template-columns: minmax(16rem, 85vh);
-	margin: 5%;
-	gap: 20vh;
+	height: 85vh;
+
+	gap: 15vh;
 }
 
 .about-us {
 	width: 100%;
-	height: 85vh;
+	min-height: 85vh;
+	// max-height: 100vh;
 	position: relative;
-	background-image: linear-gradient(rgba($primary-light, 0.2), rgba($primary-light, 0.2)), url(../img/engineering.jpg);
+	background-image: linear-gradient(rgba($primary-light, 0.2), rgba($primary-light, 0.2)), url(../img/m-engineering.jpg);
 	background-position: top;
 	background-size: cover;
 
 	overflow-x: hidden;
+
+	display: flex;
+	justify-content: center;
 	&__heading {
 		font-size: 3rem;
 		font-weight: 700;
 		color: white;
 		padding: 10px;
 		min-width: 30rem;
+
+		align-items: flex-end;
+		display: inline-flex;
+		// display: flex;
+		// display: grid;
 	}
 
 	&__content {
 		padding: 2%;
 		display: flex;
 		align-items: center;
+		align-items: flex-end;
+
 		&-text {
 			background-image: linear-gradient(rgba($primary-dark, 0.8), rgba($primary-dark, 0.8));
 
@@ -41,5 +53,64 @@
 
 			color: white;
 		}
+	}
+}
+
+.what-we-have {
+	.container {
+		h1 {
+			font-weight: 900;
+			color: $primary-light-2;
+		}
+		h4 {
+			font-weight: 700;
+			color: $primary-light;
+		}
+
+		.row.mt-3 {
+			border: 2px solid rgba($color: $primary-light-2, $alpha: 1);
+			border-radius: 15px;
+
+			img {
+				border-radius: 15px;
+			}
+		}
+	}
+}
+
+.our-mission {
+	.container {
+		h1 {
+			font-weight: 900;
+			color: $primary-light-2;
+		}
+	}
+
+	.myContainer {
+		box-shadow: 0 0.5rem 1rem rgba($color: #000000, $alpha: 0.8);
+
+		div.container-title-heading {
+			h1 {
+				font-weight: 900;
+				color: $primary-dark;
+			}
+		}
+	}
+}
+
+.our-clients {
+	.container {
+		h1 {
+			font-weight: 900;
+			color: $primary-light-2;
+		}
+	}
+	.col-md-3 {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	img {
+		// height: 200px;
 	}
 }

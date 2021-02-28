@@ -2,9 +2,15 @@ nav {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	min-height: 8vh;
+	min-height: 7vh;
 	background-color: white;
-	box-shadow: 0 2px 5px 1px rgb(199, 197, 197);
+	border-bottom: 2px solid rgb(199, 197, 197);
+
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+
+	transition: top 0.3s;
 
 	@include respond(768) {
 		border-bottom: 2px solid rgb(199, 197, 197);
@@ -29,6 +35,8 @@ nav {
 	justify-content: space-evenly;
 	list-style: none;
 	font-weight: 700;
+	margin-bottom: 0;
+
 	li {
 		padding: 15px;
 		@include respond(768) {
@@ -82,8 +90,8 @@ nav {
 		// visibility: hidden;
 		position: absolute;
 		right: 0;
-		height: 92vh;
-		top: 8vh;
+		height: 101vh;
+		top: 7vh;
 		padding-top: 10vh;
 		background-color: white;
 		color: $primary-dark;
