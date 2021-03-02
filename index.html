@@ -3,8 +3,18 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="description" content="Zheng Guan Machinery Services in Malaysia" />
+		<meta
+			name="keywords"
+			content="Zheng Guan, Zheng Guan Sdn Bhd,Machinery, Rental Service, Kulim, Rental Equipments, Quality Service, Kulim, Malaysia"
+		/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./css/style.css" />
+
+		<link rel="stylesheet" href="./css/bootstrap-icons.css" />
+		<link rel="stylesheet" href="./css/font/flaticon.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css" />
+		<!-- <link rel="stylesheet" href="./css/style.css" /> -->
+		<link rel="stylesheet" href="./css/purge.css">
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
 		<title>Zheng Guan Machinery</title>
@@ -18,16 +28,16 @@
 				</div>
 				<ul class="nav-links">
 					<li class="active">
-						<a href="">About Us</a>
-						<!-- <div class="line"></div> -->
-					</li>
-					<li>
-						<a href="/product.html">Product & Services</a>
-						<!-- <div class="line"></div> -->
+						<a href="./index.html">Home</a>
 					</li>
 					<li class="">
-						<a href="/contactUs.html">Contact Us</a>
-						<!-- <div class="line"></div> -->
+						<a href="./public/aboutUs.html">About Us</a>
+					</li>
+					<li>
+						<a href="./public/product.html">Product & Services</a>
+					</li>
+					<li class="">
+						<a href="/public/contactUs.html">Contact Us</a>
 					</li>
 				</ul>
 
@@ -39,136 +49,180 @@
 			</nav>
 			<!-- END : Navigation Bar -->
 
-			<!-- START : About Us -->
-			<div class="about-us">
-				<div class="grid-about-us">
-					<div class="about-us__heading">
-						<div class="about-us__heading-text">About Us</div>
-					</div>
-					<div class="about-us__content">
-						<div class="about-us__content-text">
-							ZHENG GUAN MACHINERY SDN BHD is a company registered with SSM (Suruhanjaya Syarikat Malaysia) in 1st December of 2015 , lead by founder
-							Low Hian Ooi who has cumulatives rich experiences in construction machinery industry for more than 30 years.
-						</div>
+			<!-- START : Welcome -->
+			<div class="welcome d-flex justify-content-center">
+				<div class="container d-flex flex-column justify-content-center align-items-center">
+					<div class="welcome__heading d-flex flex-column justify-content-center align-items-center">
+						<div class="welcome__heading-text">Welcome to</div>
+						<div class="welcome__heading-text pb-4 text-center">Zheng Guan Machinery</div>
+						<a href="./public/contactUs.html" type="submit" class="btn"><i class="bi bi-telephone-fill"></i> Contact Us</a>
 					</div>
 				</div>
 			</div>
-			<!-- END : About US -->
+			<!-- END : Welcome -->
 
-			<!-- START : Mission & Vision -->
-			<div class="our-mission mt-5">
+			<!-- START : Our Service -->
+			<div class="our-service mt-5 mb-3">
 				<div class="container">
-					<h1>Our Mission & Vision</h1>
+					<h1 class="text-center text-title-1">Our Services</h1>
 				</div>
-				<div class="container p-3">
+				<div class="container">
+					<h5 class="text-center text-title-1"><span> &nbsp; What we offers &nbsp;</span></h5>
+				</div>
+				<div class="container">
 					<div class="row">
 						<div class="col-md-6">
-							<div class="container p-0 my-2 myContainer">
-								<img src="./img/m-mission.jpg" class="img-fluid rounded" alt="" />
-								<div class="container-title-heading pt-3 px-0"><h1 class="px-5">Mission</h1></div>
-								<p class="px-5 pb-5 pt-4">
-									Our mission is to obtain recognition as the leading supplier of construction equipment in a region. Meanwhile, we seek to enhance
-									brand reputation and credibility of our company.
-								</p>
+							<div class="container container-details-our-service mt-3 p-2">
+								<div class="my__icon text-center"><i class="flaticon-worker"></i></div>
+								<h3 class="text-center pt-4 px-4 text-title-2">Highly skilled employees</h3>
+								<h5 class="text-center p-5 mx-5 mb-5">
+									A group of highly skilled emloyees with years of on experience and highly skilled rental equipment company.
+								</h5>
 							</div>
 						</div>
 						<div class="col-md-6">
-							<div class="container p-0 my-2 myContainer">
-								<img src="./img/m-vision.jpg" class="img-fluid rounded" alt="" />
-								<div class="container-title-heading pt-3 px-0"><h1 class="px-5">Vision</h1></div>
-								<p class="px-5 pb-5 pt-4">
-									Our vision is to become the industry leader among Malaysia's construction companies. Also, achieve economies of scale by increasing
-									production and lowering costs.
-								</p>
+							<div class="container container-details-our-service mt-3 p-2">
+								<div class="my__icon text-center"><i class="flaticon-winner"></i></div>
+								<h3 class="text-center pt-4 px-4 text-title-2">Quality Services</h3>
+								<h5 class="text-center p-5 mx-5 mb-5">
+									We always put customer/client first and going the extra mile to ensure quality services without any interruption.
+								</h5>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<!-- END : Mission & Vision-->
-
-			<!-- START : What We Have-->
-			<div class="what-we-have mt-5 mb-3">
-				<div class="container">
-					<h1>What We Have..</h1>
-				</div>
-				<div class="container">
-					<div class="row mt-3 mx-2">
-						<div class="col-md-4 p-0">
-							<img src="./img/m-engineering.jpg" class="my-image-1 img-fluid rounded-my" alt="" />
-						</div>
-						<div class="col-md-8 d-flex flex-column justify-content-around p-4">
-							<div class="container">
-								<h4>Highly skilled employees</h4>
-
-								<p>A group of highly skilled emloyees with years of on experience and highly skilled rental equipment company.</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="row mt-3 mx-2">
-						<div class="col-md-4 p-0">
-							<img src="./img/m-engineering.jpg" class="img-fluid rounded-my" alt="" />
-						</div>
-						<div class="col-md-8 d-flex flex-column justify-content-around p-4">
-							<div class="container">
-								<h4>Quality Services</h4>
-
-								<p>We always put customer/client first and going the extra mile to ensure quality services without any interruption.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- END : What We Have-->
+			<!-- END : Our Service-->
 
 			<!-- START : Our Clients-->
-			<div class="our-clients my-5">
+			<div class="our-clients my-5 container-fluid">
 				<div class="container">
-					<h1>Our Clients</h1>
+					<h1 class="text-center text-title-1">Our Clients</h1>
 				</div>
 				<div class="container">
-					<div class="row">
-						<div class="col-md-3 col-sm-6">
-							<img src="./img/c-1.jpg" class="img-fluid rounded" alt="" />
-						</div>
-						<div class="col-md-3 col-sm-6">
-							<img src="./img/c-2.jpg" class="img-fluid rounded" alt="" />
-						</div>
-						<div class="col-md-3 col-sm-6">
-							<img src="./img/c-3.jpg" class="img-fluid rounded" alt="" />
-						</div>
-						<div class="col-md-3 col-sm-6">
-							<img src="./img/c-4.jpg" class="img-fluid rounded" alt="" />
-						</div>
-					</div>
+					<h5 class="text-center text-title-1"><span> &nbsp; built with trust &nbsp;</span></h5>
+				</div>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
 
-					<div class="row">
-						<div class="col-md-3 col-sm-6">
-							<img src="./img/c-5.jpg" class="img-fluid rounded" alt="" />
-						</div>
-						<div class="col-md-3 col-sm-6">
-							<img src="./img/c-6.jpg" class="img-fluid rounded" alt="" />
-						</div>
-						<div class="col-md-3 col-sm-6">
-							<img src="./img/c-7.jpg" class="img-fluid rounded" alt="" />
-						</div>
-						<div class="col-md-3 col-sm-6">
-							<img src="./img/c-9.jpg" class="img-fluid rounded" alt="" />
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="col-md-3 col-sm-6">
-							<img src="./img/c-8.jpg" class="img-fluid rounded" alt="" />
-						</div>
-						<div class="col-md-3 col-sm-6">
-							<img src="./img/c-10.jpg" class="img-fluid rounded" alt="" />
-						</div>
+				<div class="space p-1"></div>
+				<div class="cotainer">
+					<div class="gallery js-flickity my-5" data-flickity-options='{ "wrapAround": true }'>
+						<img src="./img/c-1.jpg" class="img-fluid rounded gallery-cell" alt="" />
+						<img src="./img/c-2.jpg" class="img-fluid rounded" alt="" />
+						<img src="./img/c-3.jpg" class="img-fluid rounded" alt="" />
+						<img src="./img/c-4.jpg" class="img-fluid rounded" alt="" />
+						<img src="./img/c-5.jpg" class="img-fluid rounded" alt="" />
+						<img src="./img/c-6.jpg" class="img-fluid rounded" alt="" />
+						<img src="./img/c-7.jpg" class="img-fluid rounded" alt="" />
+						<img src="./img/c-9.jpg" class="img-fluid rounded" alt="" />
+						<img src="./img/c-8.jpg" class="img-fluid rounded" alt="" />
+						<img src="./img/c-10.jpg" class="img-fluid rounded" alt="" />
 					</div>
 				</div>
+
+				<h5 class="text-center text-title-1"></h5>
+
+				<div class="space p-4"></div>
 			</div>
 			<!-- END : Our Clients-->
+
+			<!-- START : Our Products-->
+			<div class="our-products my-5 container">
+				<div class="container">
+					<h1 class="text-center text-title-1">Our Products</h1>
+				</div>
+				<div class="container">
+					<h5 class="text-center text-title-1"><span> &nbsp; provide with quality services &nbsp;</span></h5>
+				</div>
+				<div class="cotainer">
+					<div class="gallery js-flickity h-100" data-flickity-options='{ "wrapAround": true }'>
+						<div class="container">
+							<div class="row">
+								<div class="col-md-4 text-center">
+									<img src="./img/products/generator.jpg" class="img-fluid rounded" alt="" />
+									<h3 class="text-center text-title-1">Generator</h3>
+								</div>
+								<div class="col-md-4 text-center">
+									<img src="./img/products/concrete-mixer.jpg" class="img-fluid rounded" alt="" />
+									<h3 class="text-center text-title-1">Concrete Mixer</h3>
+								</div>
+								<div class="col-md-4 text-center">
+									<img src="./img/products/road-cutter.jpg" class="img-fluid rounded" alt="" />
+									<h3 class="text-center text-title-1">Road Cutter</h3>
+								</div>
+							</div>
+						</div>
+						<div class="container">
+							<div class="row">
+								<div class="col-md-4 text-center">
+									<img src="./img/products/sub-pump.jpg" class="img-fluid rounded" alt="" />
+									<h3 class="text-center text-title-1">Sub-Pump</h3>
+								</div>
+								<div class="col-md-4 text-center">
+									<img src="./img/products/air-compressor-1.jpg" class="img-fluid rounded" alt="" />
+									<h3 class="text-center text-title-1">Air Compressor Model 1</h3>
+								</div>
+								<div class="col-md-4 text-center">
+									<img src="./img/products/air-compressor-2.jpg" class="img-fluid rounded" alt="" />
+									<h3 class="text-center text-title-1">Air Compressor Model 2</h3>
+								</div>
+							</div>
+						</div>
+						<div class="container">
+							<div class="row">
+								<div class="col-md-4 text-center">
+									<img src="./img/products/tower-light.jpg" class="img-fluid rounded" alt="" />
+									<h3 class="text-center text-title-1">Tower Light</h3>
+								</div>
+								<div class="col-md-4 text-center">
+									<img src="./img/products/bar-bender&cutter.jpg" class="img-fluid rounded" alt="" />
+									<h3 class="text-center text-title-1">Bar-Bender & Cutter</h3>
+								</div>
+								<div class="col-md-4 text-center">
+									<img src="./img/products/vibrating-poker.jpg" class="img-fluid rounded" alt="" />
+									<h3 class="text-center text-title-1">Vibrating Poker</h3>
+								</div>
+							</div>
+						</div>
+
+						<div class="container">
+							<div class="row">
+								<div class="col-md-4 text-center">
+									<img src="./img/products/link-bender.jpg" class="img-fluid rounded" alt="" />
+									<h3 class="text-center text-title-1">Link Bender</h3>
+								</div>
+								<div class="col-md-4 text-center">
+									<img src="./img/products/sludge-pump.jpg" class="img-fluid rounded" alt="" />
+									<h3 class="text-center text-title-1">Sludge Pump</h3>
+								</div>
+								<div class="col-md-4 text-center">
+									<img src="./img/products/1-ton-road-roller.jpg" class="img-fluid rounded" alt="" />
+									<h3 class="text-center text-title-1">1 ton Road Roller</h3>
+								</div>
+							</div>
+						</div>
+						<div class="container">
+							<div class="row">
+								<div class="col-md-4 text-center">
+									<img src="./img/products/vikyno-diesel-engine.jpg" class="img-fluid rounded" alt="" />
+									<h3 class="text-center text-title-1">Vikyno Diesel Engine</h3>
+								</div>
+								<div class="col-md-4 text-center">
+									<img src="./img/products/robin-engine.jpg" class="img-fluid rounded" alt="" />
+									<h3 class="text-center text-title-1">Robin Enginer</h3>
+								</div>
+								<div class="col-md-4 text-center">
+									<img src="./img/products/tamping-rammer.jpg" class="img-fluid rounded" alt="" />
+									<h3 class="text-center text-title-1">Tamping Rammer</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="space p-4"></div>
+			</div>
+			<!-- END : Our Products-->
 
 			<!-- START : FOOTER-->
 			<footer class="pb-0 mb-0">
@@ -191,27 +245,30 @@
 						<div class="col-md-9">
 							<div class="container pl-4">
 								<div class="row pb-3 pl-2">
-									<h2>Contact Us</h2>
+									<h2 class="text-primary-color">Contact Us</h2>
 								</div>
 
 								<div class="row">
 									<div class="col-md-3">
-										<h4>Head Office</h4>
+										<h4 class="text-primary-color"><i class="bi bi-house-fill"></i> Office</h4>
 										<p>
-											No.6, Jalan Sierra 6/5, <br />
-											Bandar 16 Sierra, <br />
-											47120 Puchong, Selangor.
+											837, Jalan Lebuh Bandar 1, <br />
+											Bandar Putra, <br />
+											09000 Kulim, Kedah.
 										</p>
 									</div>
 									<div class="col-md-3">
-										<h4>Phone & Fax</h4>
-										<p>Phone : +60 163300224 <br />+60 124138687</p>
+										<h4 class="text-primary-color"><i class="bi bi-telephone-fill"></i> Phone & Fax</h4>
+										<p>+60 164252888 <br />+60 194286000</p>
 									</div>
 									<div class="col-md-6">
-										<h4>Web & Mail</h4>
+										<h4 class="text-primary-color"><i class="bi bi-pin-fill"></i> Web & Mail</h4>
 										<p>
-											Email : zhengguan8687@hotmail.com <br />
-											Fb : Zheng Guan Machinery Sdn Bhd
+											<i class="bi bi-envelope-fill text-another-color"></i> zhengguan8687@hotmail.com <br />
+											<i class="bi bi-facebook text-primary"></i>
+											<a href="https://www.facebook.com/Zheng-Guan-Machinery-Sdn-Bhd-100420325001824/" style="text-decoration: none; color: black"
+												>Zheng Guan Machinery Sdn Bhd</a
+											>
 										</p>
 									</div>
 								</div>
